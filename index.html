@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NONIOAEY 🌸 | Premium Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loading-screen" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <h2>NONIOAEY</h2>
+            <p>Loading Studio...</p>
+        </div>
+    </div>
+
+    <div class="bg-layer">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <main class="premium-glass-container">
+        
+        <section id="view-home" class="page-view active">
+            <div class="profile-showcase">
+                <div class="avatar-wrapper">
+                    <div class="avatar-ring-1"></div>
+                    <div class="avatar-ring-2"></div>
+                    <img src="https://placehold.co/300x300/ffb6c1/ffffff?text=Studio" id="main-avatar" alt="Studio Avatar">
+                    <button class="admin-action-btn edit-avatar-btn hidden" onclick="triggerUpload('main-avatar')"><i class="fa-solid fa-camera"></i></button>
+                </div>
+                <h1 class="brand-title shimmer-text">NONIOAEY</h1>
+                <div class="badge-container">
+                    <span class="pro-badge"><i class="fa-solid fa-star"></i> Premium Commission</span>
+                </div>
+                <p class="brand-bio" contenteditable="false" id="txt-bio">"รับทำป้ายขายไอดี • ทำเว็บร้าน • ปล่อยเช่ารหัส • และอื่นๆ"</p>
+                
+                <div class="social-dock">
+                    <a href="https://www.facebook.com/share/1De6NiueGU/?mibextid=wwXIfr" target="_blank" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://line.me/ti/p/xnh050s5VP" target="_blank" class="social-btn" title="Line"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+
+            <div class="nav-grid">
+                <button class="nav-card" onclick="switchView('view-web')">
+                    <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                    <span>งานเว็บ</span>
+                </button>
+                <button class="nav-card" onclick="switchView('view-id')">
+                    <div class="icon-box"><i class="fa-solid fa-palette"></i></div>
+                    <span>ป้ายไอดี</span>
+                </button>
+                <button class="nav-card" onclick="switchView('view-decor')">
+                    <div class="icon-box"><i class="fa-solid fa-shapes"></i></div>
+                    <span>บล็อกป้าย</span>
+                </button>
+                <button class="nav-card" onclick="switchView('view-rov')">
+                    <div class="icon-box"><i class="fa-solid fa-gamepad"></i></div>
+                    <span>ROV</span>
+                </button>
+                <button class="nav-card" onclick="switchView('view-idv')">
+                    <div class="icon-box"><i class="fa-solid fa-mask"></i></div>
+                    <span>Identity V</span>
+                </button>
+                <button class="nav-card" onclick="switchView('view-forms')">
+                    <div class="icon-box"><i class="fa-regular fa-rectangle-list"></i></div>
+                    <span>กลุ่มฟอร์ม</span>
+                </button>
+                <button class="nav-card" onclick="switchView('view-courses')">
+                    <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <span>คอร์สเรียน</span>
+                </button>
+                <button class="nav-card" onclick="switchView('view-faq')">
+                    <div class="icon-box"><i class="fa-solid fa-clipboard-question"></i></div>
+                    <span>FAQ & สั่งซื้อ</span>
+                </button>
+            </div>
+            <div class="footer-sign">design. @NONIOAEY</div>
+        </section>
+
+        <section id="view-web" class="page-view">
+            <div class="page-header">
+                <button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button>
+                <h2>งานเว็บ 💻</h2>
+            </div>
+            
+            <div class="content-box glass-panel">
+                <p class="desc" contenteditable="false" id="txt-web-desc">รับทำเว็บไซต์ลิงค์ร้าน มีเทมเพลตและสั่งทำพิเศษ (เริ่ม 69.-)</p>
+                <div class="price-split">
+                    <div class="price-col">
+                        <h3>🎀 เรทราคา</h3>
+                        <ul>
+                            <li><span>เว็บโอนเงิน</span> <b>69.-</b></li>
+                            <li><span>เว็บผลงาน</span> <b>109.-</b></li>
+                            <li><span>เว็บรายละเอียด</span> <b>159.-</b></li>
+                            <li><span>เว็บผลงาน + รายละเอียด</span> <b>209.-</b></li>
+                        </ul>
+                    </div>
+                    <div class="price-col dark">
+                        <h3>✨ ราคาบวกเพิ่ม</h3>
+                        <ul>
+                            <li>แก้ฟรี 1 ครั้ง (หลังส่งลิงก์ 5.-)</li>
+                            <li>รูป 1-3 ใส่ฟรี (เพิ่ม 10.-)</li>
+                            <li>รองาน 4-8 ชม.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title">ผลงานของเรา</h3>
+            <div class="gallery-container" id="gallery-web"></div>
+            <button class="add-item-btn admin-action-btn hidden" onclick="openAddModal('web')"><i class="fa-solid fa-plus"></i> เพิ่มผลงานเว็บ</button>
+        </section>
+
+        <section id="view-id" class="page-view">
+            <div class="page-header">
+                <button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button>
+                <h2>ป้ายไอดี 🎨</h2>
+            </div>
+            
+            <div class="content-box glass-panel">
+                <p class="desc" contenteditable="false" id="txt-id-desc">รับทำป้ายขายไอดี ดีไซน์สวย โดดเด่น ดึงดูดลูกค้า</p>
+                <div class="price-split">
+                    <div class="price-col">
+                        <h3>🎀 𝖲𝗄𝗂𝗇 𝖱𝖺𝗍𝖾</h3>
+                        <ul>
+                            <li><span>1 - 100 สกิน</span> <b>0.50 / สกิน</b></li>
+                            <li><span>100+ สกิน</span> <b>1.00 / สกิน</b></li>
+                        </ul>
+                    </div>
+                    <div class="price-col">
+                        <h3>✨ 𝖮𝗍𝗁𝖾𝗋𝗌</h3>
+                        <ul>
+                            <li><span>หัวป้าย</span> <b>35.-</b></li>
+                            <li><span>ป้ายไฟ</span> <b>2.- / ชิ้น</b></li>
+                            <li><span>ประดับ</span> <b>0.50 / ชิ้น</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title">ตัวอย่างงาน (กดขยายได้)</h3>
+            <div class="gallery-container grid-2" id="gallery-id"></div>
+            <button class="add-item-btn admin-action-btn hidden" onclick="openAddModal('id')"><i class="fa-solid fa-plus"></i> เพิ่มป้ายไอดี</button>
+        </section>
+
+        <section id="view-decor" class="page-view">
+            <div class="page-header"><button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button><h2>บล็อกป้าย 🎀</h2></div>
+            <div class="gallery-container" id="gallery-decor"></div>
+            <button class="add-item-btn admin-action-btn hidden" onclick="openAddModal('decor')"><i class="fa-solid fa-plus"></i> เพิ่มบล็อกป้าย</button>
+        </section>
+
+        <section id="view-rov" class="page-view">
+            <div class="page-header"><button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button><h2>กลุ่ม ROV 🎮</h2></div>
+            <div class="gallery-container" id="gallery-rov"></div>
+            <button class="add-item-btn admin-action-btn hidden" onclick="openAddModal('rov')"><i class="fa-solid fa-plus"></i> เพิ่มงาน ROV</button>
+        </section>
+
+        <section id="view-idv" class="page-view">
+            <div class="page-header"><button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button><h2>Identity V 🕵️</h2></div>
+            <div class="gallery-container" id="gallery-idv"></div>
+            <button class="add-item-btn admin-action-btn hidden" onclick="openAddModal('idv')"><i class="fa-solid fa-plus"></i> เพิ่มงาน IDV</button>
+        </section>
+
+        <section id="view-forms" class="page-view">
+            <div class="page-header"><button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button><h2>กลุ่มฟอร์ม 📝</h2></div>
+            <div class="gallery-container" id="gallery-forms"></div>
+            <button class="add-item-btn admin-action-btn hidden" onclick="openAddModal('forms')"><i class="fa-solid fa-plus"></i> เพิ่มฟอร์ม</button>
+        </section>
+
+        <section id="view-courses" class="page-view">
+            <div class="page-header"><button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button><h2>คอร์สเรียน 📚</h2></div>
+            <div class="gallery-container" id="gallery-courses"></div>
+            <button class="add-item-btn admin-action-btn hidden" onclick="openAddModal('courses')"><i class="fa-solid fa-plus"></i> เพิ่มคอร์ส</button>
+        </section>
+
+        <section id="view-faq" class="page-view">
+            <div class="page-header"><button class="back-btn" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button><h2>FAQ & สั่งซื้อ 🛒</h2></div>
+            <div class="content-box glass-panel text-left">
+                <h3 class="section-title text-left">❓ คำถามที่พบบ่อย</h3>
+                <div class="qa-item"><b>Q: สั่งงานผ่านไหน?</b><p>A: FB / Line หน้าแรกเลยค่ะ 🥰</p></div>
+                <div class="qa-item"><b>Q: รองานนานไหม?</b><p>A: 4-8 ชม. (คิวเยอะแจ้งก่อนค่ะ)</p></div>
+                <div class="qa-item"><b>Q: แก้ไขได้กี่ครั้ง?</b><p>A: แก้ฟรี 1 ครั้งก่อนส่งงานค่ะ</p></div>
+                
+                <hr style="border-color: rgba(255,141,161,0.3); margin: 20px 0;">
+                
+                <h3 class="section-title text-left">🛒 ขั้นตอนการสั่งซื้อ</h3>
+                <ul class="step-list">
+                    <li><span class="num">1</span> เลือกงาน</li>
+                    <li><span class="num">2</span> ส่งบรีฟ</li>
+                    <li><span class="num">3</span> โอนเงิน</li>
+                    <li><span class="num">4</span> รอรับงาน</li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+
+    <div class="admin-float-wrapper">
+        <button class="admin-fab" onclick="toggleAdminModal()"><i class="fa-solid fa-sliders"></i></button>
+    </div>
+
+    <div id="modal-image" class="full-modal hidden">
+        <button class="modal-close-btn text-white" onclick="closeModal('modal-image')"><i class="fa-solid fa-xmark"></i></button>
+        <img id="modal-display-img" src="" alt="Full View">
+    </div>
+
+    <div id="modal-link" class="glass-modal hidden">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeModal('modal-link')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon-top"><i class="fa-solid fa-link"></i></div>
+            <h3 id="modal-link-title">ชื่องาน</h3>
+            <p style="color: #888; font-size: 13px; margin: 10px 0 20px;">คลิกเพื่อไปยังหน้าตัวอย่างผลงาน</p>
+            <a href="#" target="_blank" id="modal-link-url" class="btn-primary-glow">ดูตัวอย่างผลงาน</a>
+        </div>
+    </div>
+
+    <div id="modal-add" class="glass-modal hidden">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeModal('modal-add')"><i class="fa-solid fa-xmark"></i></button>
+            <h3 style="color: #ff8da1; margin-bottom: 20px;">✨ เพิ่มผลงานใหม่</h3>
+            <input type="text" id="add-title" class="input-premium" placeholder="ชื่องาน...">
+            <input type="text" id="add-link" class="input-premium" placeholder="ลิงก์ตัวอย่าง (ถ้ามี)...">
+            <div class="upload-area" onclick="document.getElementById('add-img-file').click()">
+                <img id="add-img-preview" src="https://placehold.co/300x150/ffe4e1/ff69b4?text=+Click+to+Upload" alt="Upload">
+                <input type="file" id="add-img-file" class="hidden" accept="image/*" onchange="previewAddImg(event)">
+            </div>
+            <button class="btn-primary-glow" style="margin-top: 15px;" onclick="saveNewItem()">บันทึกข้อมูล</button>
+        </div>
+    </div>
+
+    <div id="modal-login" class="glass-modal hidden">
+        <div class="modal-card">
+            <button class="modal-close-btn" onclick="closeModal('modal-login')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon-top"><i class="fa-solid fa-lock"></i></div>
+            <h3 style="margin-bottom: 5px;">Admin Login</h3>
+            <p style="font-size: 12px; color: #888; margin-bottom: 20px;">เข้าสู่ระบบเพื่อเพิ่ม/ลบ และแก้ไขข้อมูล</p>
+            <input type="password" id="login-pass" class="input-premium" placeholder="Password...">
+            <p id="login-error" class="hidden" style="color: #ff4d4f; font-size: 12px; margin-top: 5px;">รหัสผ่านไม่ถูกต้อง!</p>
+            <button class="btn-primary-glow" style="margin-top: 15px;" onclick="verifyAdmin()">เข้าสู่ระบบ</button>
+        </div>
+    </div>
+
+    <input type="file" id="general-uploader" accept="image/*" class="hidden" onchange="handleGeneralUpload(event)">
+
+    <script src="script.js"></script>
+</body>
+</html>
